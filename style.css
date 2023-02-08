@@ -1,0 +1,185 @@
+/*
+            SPACING SYSTEM (px)
+            2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+            FONT SIZE SYSTEM (px)
+            10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+            */
+
+/*
+            */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+body {
+  font-family: "Libre Franklin", sans-serif;
+  color: #343a40;
+  line-height: 1;
+}
+
+.hero {
+  max-width: 144rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-img img {
+  width: 50%;
+}
+
+.section-hero {
+  padding: 9.4rem 0 9.4rem 0;
+}
+
+.heading-primary {
+  font-size: 4.4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: hsl(0, 0%, 59%);
+  margin-bottom: 1.6rem;
+}
+
+.heading-primary span {
+  color: #000;
+}
+
+.hero-logo {
+  margin-bottom: 3.2rem;
+}
+
+.hero-text {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-bottom: 1.6rem;
+}
+
+.form-control {
+  margin-bottom: 6.4rem;
+  position: relative;
+}
+
+.form-control input {
+  padding: 1.6rem;
+  width: 26%;
+  border-radius: 2.5rem;
+  border: 1px solid hsl(0, 0%, 59%);
+}
+
+.form-control input:focus {
+  outline: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.6rem 4.8rem;
+  background-color: hsl(223, 87%, 63%);
+  color: #fff;
+  border: none;
+  border-radius: 2.5rem;
+  margin-left: 1.2rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.footer {
+  text-align: center;
+  padding-bottom: 3.2rem;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+  margin-bottom: 3.2rem;
+}
+.footer-link {
+  width: 3rem;
+  height: 3rem;
+}
+
+small {
+  font-size: 1rem;
+}
+
+.form-control small {
+  visibility: hidden;
+  position: absolute;
+  top: 120%;
+  left: 33%;
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control.error input {
+  border-radius: #e74c3c;
+}
+
+/**************************/
+/* BELOW 400px (Mobile) */
+
+@media (max-width: 25em) {
+  .heading-primary {
+    font-size: 2.4rem;
+  }
+
+  .hero-text {
+    font-size: 1.2rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .form-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .form-control small {
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 33%;
+  }
+
+  .btn {
+    display: block;
+    padding: 1.2rem;
+    width: 80%;
+  }
+
+  .form-control input {
+    display: block;
+    padding: 1.2rem;
+    width: 80%;
+  }
+
+  .hero-img img {
+    width: 80%;
+    margin-bottom: 6.4rem;
+  }
+
+  .footer-link {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
